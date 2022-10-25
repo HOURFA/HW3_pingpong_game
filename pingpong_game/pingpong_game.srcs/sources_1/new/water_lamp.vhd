@@ -7,7 +7,7 @@ entity water_lamp is
            rst : in STD_LOGIC;
            water_lamp_en : in STD_LOGIC;
            water_lamp_path : in STD_LOGIC;
-           led_out_bus : inout STD_LOGIC_VECTOR (7 downto 0));
+           led_out_bus : inout STD_LOGIC_VECTOR (LED_NUM-1 downto 0));
 end water_lamp;
 
 architecture Behavioral of water_lamp is
